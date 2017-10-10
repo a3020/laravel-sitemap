@@ -1,4 +1,4 @@
-# Downloads, validates, and parsers remote sitemap documents
+# Retrieves, validates, and parses remote sitemap documents
 
 [![Build Status](https://travis-ci.org/a3020/laravel-sitemap.svg?branch=master)](https://travis-ci.org/a3020/laravel-sitemap)
 
