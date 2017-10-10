@@ -1,6 +1,6 @@
 {
     "name": "a3020/sitemap",
-    "description": "Sitemap validator",
+    "description": "Retrieves, validates, and parses remote sitemap documents",
     "type": "library",
     "require": {
         "php": "^7.1",
