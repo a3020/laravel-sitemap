@@ -1,5 +1,5 @@
 {
-    "name": "a3020/sitemap",
+    "name": "a3020/laravel-sitemap",
     "description": "Retrieves, validates, and parses remote sitemap documents",
     "license": "MIT",
     "type": "library",
