@@ -1,6 +1,7 @@
 {
     "name": "a3020/sitemap",
     "description": "Retrieves, validates, and parses remote sitemap documents",
+    "license": "MIT",
     "type": "library",
     "require": {
         "php": "^7.1",
