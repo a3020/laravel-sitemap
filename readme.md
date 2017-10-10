@@ -2,6 +2,12 @@
 
 [![Build Status](https://travis-ci.org/a3020/laravel-sitemap.svg?branch=master)](https://travis-ci.org/a3020/laravel-sitemap)
 
+## Installation
+
+```bash
+composer require a3020/laravel-sitemap
+```
+
 
 Retrieve a sitemap
 ```php
