@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "A3020\\Sitemap\\SitemapServiceProvider"
+                "A3020\\Sitemap\\ServiceProvider"
             ]
         }
     },
