@@ -1,5 +1,8 @@
 # Downloads, validates, and parsers remote sitemap documents
 
+[![Build Status](https://travis-ci.org/a3020/laravel-sitemap.svg?branch=master)](https://travis-ci.org/a3020/laravel-sitemap)
+
+
 Retrieve a sitemap
 ```php
 $client = $app->make('sitemap.client');
@@ -12,7 +15,7 @@ $validator = $app->make('sitemap.validator');
 $validator->validate($contents);
 ```
 
-Parses a sitemap
+Parse a sitemap
 ```php
 $parser = $app->make('sitemap.parser');
 
