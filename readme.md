@@ -8,20 +8,24 @@
 composer require a3020/laravel-sitemap
 ```
 
+## Usage
 
 Retrieve a sitemap
+
 ```php
 $client = $app->make('sitemap.client');
 $contents = $client->get('https://somedomain.com/sitemap.xml');
 ``` 
 
 Validate a sitemap
+
 ```php
 $validator = $app->make('sitemap.validator');
 $validator->validate($contents);
 ```
 
 Parse a sitemap
+
 ```php
 $parser = $app->make('sitemap.parser');
 
