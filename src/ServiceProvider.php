@@ -32,5 +32,10 @@ class ServiceProvider extends BaseProvider
             'sitemap.validator',
             \A3020\Sitemap\Validator\Sitemap::class
         );
+
+        $this->app->bind(
+            'sitemap.parser',
+            \A3020\Sitemap\Parser\Sitemap::class
+        );
     }
 }
