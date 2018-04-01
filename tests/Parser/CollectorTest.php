@@ -3,16 +3,11 @@
 namespace A3020\Sitemap\Test\Collector;
 
 use A3020\Sitemap\Parser\Collector;
-use A3020\Sitemap\Parser\Sitemap;
+use GuzzleHttp\Client;
 use PHPUnit\Framework\TestCase;
 
 class CollectorTest extends TestCase
 {
-    public function setUp()
-    {
-        $this->parser = new Sitemap;
-    }
-
     public function test_clean_urls()
     {
         $urls = [
@@ -38,7 +33,7 @@ class CollectorTest extends TestCase
      */
     public function test_no_sitemap_found_exception()
     {
-        $sitemapClient = new \A3020\Sitemap\Client\Sitemap();
+        $sitemapClient = new \A3020\Sitemap\Client\Sitemap(new Client());
         $sitemapParser = new \A3020\Sitemap\Parser\Sitemap();
 
         $client = new Collector($sitemapClient, $sitemapParser);
