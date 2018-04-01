@@ -10,12 +10,19 @@ composer require a3020/laravel-sitemap
 
 ## Usage
 
-Retrieve a sitemap
+Retrieve urls from a single sitemap
 
 ```php
 $client = $app->make('sitemap.client');
-$contents = $client->get('https://somedomain.com/sitemap.xml');
-``` 
+$urls = $client->get(['https://somedomain.com/sitemap.xml']);
+```
+
+Retrieve urls from sitemaps + sitemaps from robots.txt
+
+```php
+$client = $app->make('sitemap.client');
+$urls = $client->get(['https://somedomain.com/sitemap.xml'], 'https://somedomain.com/robots.txt');
+```
 
 Validate a sitemap
 
