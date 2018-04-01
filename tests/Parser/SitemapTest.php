@@ -5,7 +5,7 @@ namespace A3020\Sitemap\Test\Parser;
 use A3020\Sitemap\Parser\Sitemap;
 use PHPUnit\Framework\TestCase;
 
-class Regex extends TestCase
+class RegexTest extends TestCase
 {
     /** @var Sitemap */
     protected $parser;
