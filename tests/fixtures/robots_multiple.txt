@@ -1,0 +1,6 @@
+// robots.txt
+Sitemap: http://www.example.com/sitemap_index.xml
+Sitemap: http://www.example.com/blog.xml
+
+User-agent:*
+Disallow: /some/disallowed/path

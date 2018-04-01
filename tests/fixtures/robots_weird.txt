@@ -1,0 +1,7 @@
+// robots.txt
+Sitemap: http://www.example.com/sitemap_index.xml
+Sitemap:http://www.example.com/blog.xml
+
+
+Sitemap:
+http://www.example.com/products.xml

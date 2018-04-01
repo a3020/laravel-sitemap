@@ -7,16 +7,6 @@ use Illuminate\Support\ServiceProvider as BaseProvider;
 class ServiceProvider extends BaseProvider
 {
     /**
-     * Bootstrap the application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        //
-    }
-
-    /**
      * Register the application services.
      *
      * @return void
@@ -25,7 +15,7 @@ class ServiceProvider extends BaseProvider
     {
         $this->app->bind(
             'sitemap.client',
-            \A3020\Sitemap\Client\Sitemap::class
+            \A3020\Sitemap\Client\Client::class
         );
 
         $this->app->bind(
