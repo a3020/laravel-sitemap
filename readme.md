@@ -1,6 +1,7 @@
 # Retrieves, validates, and parses remote sitemap documents
 
 [![Build Status](https://travis-ci.org/a3020/laravel-sitemap.svg?branch=master)](https://travis-ci.org/a3020/laravel-sitemap)
+[![Software License][ico-license]](LICENSE.txt)
 
 ## Installation
 
@@ -42,3 +43,5 @@ $parser->urls($contents);
 // Filter to only get portfolio URLs.
 $parser->filterUrlsByRegexes($contents, ['/portfolio']);
 ```
+
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
