@@ -34,7 +34,7 @@ class Collector
 
         foreach ($locations as $location) {
             try {
-                $urls += $this->fromSitemap($location);
+                $urls = array_merge($urls, $this->fromSitemap($location));
                 $sitemapsFound++;
             } catch (Exception $e) {}
         }
@@ -66,6 +66,11 @@ class Collector
 
         // Prevent duplicates or empty urls
         $urls = array_filter(array_unique($urls));
+
+        // Remove urls that end with .xml
+        $urls = array_filter($urls, function ($url) {
+            return strpos($url, '.xml') === false;
+        });
 
         // Reindex
         return array_values($urls);

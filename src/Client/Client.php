@@ -28,20 +28,20 @@ class Client
     }
 
     /**
-     * @param array $urls A list of sitemap urls
+     * @param array $sitemapUrls A list of sitemap urls
      * @param string $robotsTxt Url to robots.txt file
      *
      * @throws \A3020\Sitemap\Exception\NoValidSitemapFoundException
      *
      * @return array
      */
-    public function get(array $urls, $robotsTxt = null): array
+    public function get(array $sitemapUrls, $robotsTxt = null): array
     {
         if ($robotsTxt) {
-            $urls = array_merge($urls, $this->fromRobotsTxt($robotsTxt));
+            $sitemapUrls = array_merge($sitemapUrls, $this->fromRobotsTxt($robotsTxt));
         }
 
-        return $this->collector->get(array_unique($urls));
+        return $this->collector->get(array_unique($sitemapUrls));
     }
 
     /**
