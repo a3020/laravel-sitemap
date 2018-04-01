@@ -2,9 +2,7 @@
 
 namespace A3020\Sitemap\Parser;
 
-use A3020\Sitemap\Client\Sitemap;
 use A3020\Sitemap\Exception\NoValidSitemapFoundException;
-use A3020\Sitemap\Parser;
 use Exception;
 
 class Collector
@@ -15,7 +13,7 @@ class Collector
     /** @var Parser\Sitemap */
     private $sitemapParser;
 
-    public function __construct($sitemapClient = null, $sitemapParser = null)
+    public function __construct(\A3020\Sitemap\Client\Sitemap $sitemapClient, Sitemap $sitemapParser)
     {
         $this->sitemapClient = $sitemapClient;
         $this->sitemapParser = $sitemapParser;

@@ -38,10 +38,10 @@ class Client
     public function get(array $urls, $robotsTxt = null): array
     {
         if ($robotsTxt) {
-            $urls += $this->fromRobotsTxt($robotsTxt);
+            $urls = array_merge($urls, $this->fromRobotsTxt($robotsTxt));
         }
 
-        return $this->collector->get($urls);
+        return $this->collector->get(array_unique($urls));
     }
 
     /**
